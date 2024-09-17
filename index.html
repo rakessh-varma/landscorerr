@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <style>
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+  z-index: 1000; 
+}
+
+nav a {
+  color: black; 
+  text-decoration: none; 
+}
+
+nav button {
+  border: none;
+  outline: none;
+  height: 6vh;
+  background-color: transparent;
+  font-size: 15px;
+  color: black;
+}
+
+nav img {
+  width: 20vw; 
+}
+
+
+    .a img {
+      width: 20vw;
+    }
+
+    .more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 23px;
+
+    }
+
+    .more button {
+      border: none;
+      outline: none;
+      height: 6vh;
+      position: relative;
+      background-color: transparent;
+      font-size: 15px;
+      z-index: 100;
+      color: black;
+    }
+
+    .carousel {
+      width: 25% !important;
+    }
+
+
+
+
+    .c {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 56px;
+      margin-top: 30px;
+     
+    }
+    .propertytwo{
+      border-radius: 12px;
+    }
+    .face {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 23px;
+    }
+    .green{
+      background-color: rgba(4, 51, 4, 0.916);
+      height: 150px;
+      color: #fff;
+      text-align: center;
+      height:200px;
+      
+    }
+    #name1{
+      padding-top: 40px;
+    }
+    #name2{
+      font-size: 18px;
+      font-style: italic;
+    }
+    
+    
+    #propertytile{
+      padding-top: 50px;
+      text-align: center;
+      border-radius: 12px;
+    }
+  .sectionone{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 23px;   
+  }
+  .card {
+        position: relative;
+        width: 400px;
+        height: 210px;
+        overflow: hidden;
+        border: 1px solid #ccc; 
+        border-radius: 8px;
+      }
+      
+      .card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      
+      .card-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6); 
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        text-align: center;
+        padding: 20px;
+      }
+      
+      .card:hover .card-text {
+        opacity: 1;
+      }
+
+      .footer{
+        height: 400px;
+        background-color: rgb(24, 124, 24);
+        display: flex;
+        margin-top: 30px;
+      }
+      #logo{
+        margin-top: 50px;
+        margin-left: 100px;
+      }
+      #logomatter{
+        margin-left: 200px;
+        color: #ccc;
+        margin-top: 20px;
+      }
+      #follow{
+        margin-left: 200px;
+        color: #e2dede;
+        font-size: 25px;
+        font-weight: boldc;
+
+      }
+      #social{
+        margin-left: 200px;
+      }
+      
+      .hunter{
+        margin-top: 50px;
+        justify-content: center;
+        display: flex;
+        gap: 56px;
+      }
+      
+    .og {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 56px;
+      margin-top: 30px;
+    }
+
+    .details{
+display:flex;
+justify-content: space-evenly;
+/* border:2px solid black; */
+text-align: center;
+margin-top: 100px;
+margin-left: 250px;
+color: #e2dede;
+gap: 65px;
+}
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="ba">
+    <nav>
+      <div class="a"><img src="./logo1.png"></div>
+      <div class="more">
+        <button>HOME</button>
+        <button>ALL LANDS</button>
+        <button><a href="./form.html">SIGN UP</a></button>
+        <button><a href="./signin.html">SIGN IN</a></button>
+        
+    </nav>
+    <div class="b">
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            src="https://maps.google.com/maps?q=university%20of%20san%20francisco&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            frameborder="0" scrolling="no" style="width:100vw; height: 100vh;"></iframe>
+          <style>
+            .mapouter {
+              display: table;
+            }
+
+            .gmap_canvas {
+              overflow: hidden;
+              position: relative;
+              height: 80vh;
+              width: 100vw;
+              background: #fff;
+            }
+          </style><a href="https://www.taxuni.com/1040-ez-form/">1040 EZ Form</a>
+          <style>
+            .gmap_canvas iframe {
+              position: relative !important;
+              z-index: 2 !important;
+            }
+
+            .gmap_canvas a {
+              color: #fff !important;
+              position: absolute !important;
+              top: 0 !important;
+              left: 0 !important;
+              z-index: 0 !important;
+            }
+
+            .search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    width: 50%;
+    margin-left: 330px;
+    position: relative;
+    top: 20px;
+}
+
+.city-input, .category-select, .min-price-input, .max-price-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.category-select {
+    width: 150px;
+}
+
+.min-price-input, .max-price-input {
+    width: 400px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+          </style>
+        </div>
+      </div>
+    </div>
+  </div>
+ <div class="green">
+  <div class="search-bar">
+    <input type="text" placeholder="City" class="city-input">
+    <select class="category-select">
+        <option value="">Category</option>
+        <option value="residential">Residential</option>
+        <option value="commercial">Commercial</option>
+        <option value="land">Land</option>
+    </select>
+    <input type="number" placeholder="Min Price" class="min-price-input">
+    <input type="number" placeholder="Max Price" class="max-price-input">
+    <button type="submit">Search</button>
+</div>
+  <h1 id="name1">Find your new place with landscore</h1>
+  <h3 id="name2">Fusce risus metus, placerat in consectetur eu, porttitor a est sed sed dolor lorem cras adipiscing</h3>
+ </div>
+
+<div class="propertieone">
+  <h2 id="propertytile">Featured Properties</h2>
+  <div class="sectionone">
+    <div class="card">
+      <img src="./2.jpeg" alt="Card Image" class="card-image">
+      <div class="card-text">
+        <h2>3Cr</h2>
+        <p>Tadikonda,Guntur, India</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./4.jpeg" alt="Card Image" class="card-image">
+      <div class="card-text">
+        <h2>1Cr</h2>
+        <p>kulkacharla, vikarabad,India</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./3.jpeg" alt="Card Image" class="card-image">
+      <div class="card-text">
+        <h2>3Cr</h2>
+        <p>Miyapur, Hyderbad, India</p>
+      </div>
+    </div>
+    
+    </div>
+      
+    </div>
+
+    <div class="propertytwo">
+      <h2 id="propertytile">All Properties</h2>
+      <div class="c">
+
+        <div id="apple" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./4.jpeg" class="d" alt="..." width="500px" height="210px">
+    
+            </div>
+            <div class="carousel-item">
+              <img src="./3.jpeg" class="d" alt="..." width="500px" height="210px">
+            </div>
+            <div class="carousel-item">
+              <img src="./2.jpeg" class="d" alt="..." width="500px" height="210px">
+            </div>
+            <div class="carousel-item">
+              <img src="./1.jpeg" class="d" alt="..." width="500px" height="210px">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#apple">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#apple" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <h4> 2 Acre 21 Guntas verified land bhadrachalam</h4>
+        </div>
+    
+    
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./2.jpeg" class="d" alt="..." width="500px" height="210px">
+    
+            </div>
+            <div class="carousel-item">
+              <img src="./3.jpeg" class="d" alt="..." width="500px" height="210px">
+            </div>
+            <div class="carousel-item">
+              <img src="./4.jpeg" class="d" alt="..." width="500px" height="210px">
+            </div>
+            <div class="carousel-item">
+              <img src="./1.jpeg" class="d" alt="..." width="500px" height="210px">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <h4>2 Acre 11 Guntas verified land kothagudem</h4>
+        </div>
+        <div id="banana" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./1.jpeg" class="d" alt="..." width="500px" height="210px">
+    
+            </div>
+            <div class="carousel-item">
+              <img src="./2.jpeg" class="d" alt="..." width="500px" height="210px">
+            </div>
+            <div class="carousel-item">
+              <img src="./3.jpeg" class="d" alt="..." width="500px" height="210px">
+            </div>
+            <div class="carousel-item">
+              <img src="./4.jpeg" class="d" alt="..." width="500px" height="210px">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#banana" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#banana" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <h4>2 Acre 16 Guntas verified land vikarabad</h4>
+        </div>
+    
+
+    </div>
+
+   <div class="hunter">
+
+    <div id="ple" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./road_j6smnp.webp" class="d" alt="..." width="500px" height="210px">
+
+        </div>
+        <div class="carousel-item">
+          <img src="./two.jpeg" class="d" alt="..." width="500px" height="210px">
+        </div>
+        <div class="carousel-item">
+          <img src="./4.jpeg" class="d" alt="..." width="500px" height="210px">
+        </div>
+        <div class="carousel-item">
+          <img src="./3.jpeg" class="d" alt="..." width="500px" height="210px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#ple">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#ple" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <h4>2 Acre 21 Guntas verified land guntur</h4>
+    </div>
+
+
+    <div id="Example" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./two.jpeg" class="d" alt="..." width="400px" height="210px">
+
+        </div>
+        <div class="carousel-item">
+          <img src="./4.jpeg" class="d" alt="..." width="400px" height="210px">
+        </div>
+        <div class="carousel-item">
+          <img src="./road_j6smnp.webp" class="d" alt="..." width="400px" height="210px">
+        </div>
+        <div class="carousel-item">
+          <img src="./2.jpeg" class="d" alt="..." width="400px" height="210px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#Example" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#Example" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <h4>3 Acre 21 Guntas verified land hyderabad</h4>
+    </div>
+    <div id="nana" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./solidier.webp" class="d" alt="..." width="500px" height="210px">
+
+        </div>
+        <div class="carousel-item">
+          <img src="./road_j6smnp.webp" class="d" alt="..." width="500px" height="210px">
+        </div>
+        <div class="carousel-item">
+          <img src="./2.jpeg" class="d" alt="..." width="500px" height="210px">
+        </div>
+        <div class="carousel-item">
+          <img src="./3.jpeg" class="d" alt="..." width="500px" height="210px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#nana" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#nana" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <h4>1 Acre 21 Guntas verified land secunderabad</h4>
+    </div>
+
+  </div>
+  <div class="og">
+
+    <div id="le" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./king.webp" class="d" alt="..." width="500px" height="210px">
+
+        </div>
+        <div class="carousel-item">
+          <img src="./queen.jpeg" class="d" alt="..." width="500px" height="210px">
+        </div>
+        <div class="carousel-item">
+          <img src="./solidier.webp" class="d" alt="..." width="500px" height="210px">
+        </div>
+        <div class="carousel-item">
+          <img src="./minister.jpeg" class="d" alt="..." width="500px" height="210px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#le">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#le" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <h4>4 Acre 10 Guntas verified land vizag</h4>
+    </div>
+
+
+    <div id="ample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./minister.jpeg" class="d" alt="..." width="400px" height="210px">
+
+        </div>
+        <div class="carousel-item">
+          <img src="./king.webp" class="d" alt="..." width="400px" height="210px">
+        </div>
+        <div class="carousel-item">
+          <img src="./queen.jpeg" class="d" alt="..." width="400px" height="210px">
+        </div>
+        <div class="carousel-item">
+          <img src="./solidier.webp" class="d" alt="..." width="400px" height="210px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#ample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#ample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <h4>1 Acre 18 Guntas verified land hyderabad</h4>
+    </div>
+    <div id="na" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./queen.jpeg" class="d" alt="..." width="500px" height="210px">
+
+        </div>
+        <div class="carousel-item">
+          <img src="./king.webp" class="d" alt="..." width="500px" height="210px">
+        </div>
+        <div class="carousel-item">
+          <img src="./solidier.webp" class="d" alt="..." width="500px" height="210px">
+        </div>
+        <div class="carousel-item">
+          <img src="./minister.jpeg" class="d" alt="..." width="500px" height="210px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#na" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#na" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <h4>2 Acre 5 Guntas verified land kaikinada</h4>
+    </div>
+
+  </div>
+  </div>
+
+<footer>
+  <div class="footer">
+    <div class="details">
+      <div class="aboutzomato">
+        <img src="./logo1.png" width="250px">
+          
+          
+          <p class="lines">Lorem ipsum dolor sit amet</p>
+          <p class="lines">consectetur adipiscing elit.</p>
+          <p class="lines">Follow Us</p>
+          
+      </div>
+      <div class="zomaverse">
+        
+      
+          <p class="lines">COMPANY</p>
+          <p class="lines">HOME</p>
+          <p class="lines">ALL LANDS</p>
+       
+  </div>
+  <div class="For Resturents">
+    
+    <h5>Get in Touch</h5>
+      <p class="lines">+91 40 6639 6639</p>
+      <p class="lines">T - Hub Serilingampalle (M)</p>
+      <p class="lines">Hyderabad, Telangana 500081</p>
+        
+      
+  </div>
+  <div class="LEARN MORE">
+    
+    <h5>Recently Listed Properties</h5>
+      <p class="lines">PRIVACY</p>
+      <p class="lines">SECURITY</p>
+      <p class="lines">TERMS</p>
+      <p class="lines">SITEMAP</p>
+  </div>
+ 
+  </div>
+
+  
+</footer>
+
+</body>
+
+</html>
